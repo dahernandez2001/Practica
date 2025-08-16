@@ -3,11 +3,11 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route("/ingles")
+@app.post("/ingles")
 def saludo():
-    return "hola mundo"
+    return "hello world"
 
-@app.route("/japones")
+@app.route("/japoness")
 def salud():
     return "konichiwa world"
 
@@ -19,9 +19,9 @@ def salu():
 
 @app.route("/portugues")
 def sal():
-    return "bon dia"
+    return "bonito dia"
 
 
 
 if __name__ == "__main__":
-    app.run(debug=True,host='0.0.0.0', port=53)
+    app.run(debug=True,host='0.0.0.0', port=34)
